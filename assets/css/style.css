@@ -143,7 +143,7 @@
 .main {
     color: var(--white, #FFF);
     font-family: 'Poppins', sans-serif;
-    font-size: 89px;
+    font-size: 89px !important;
     font-style: normal;
     font-weight: 700;
     line-height: 99.5%;
@@ -354,13 +354,13 @@
 }
 
 .card-1 {
-    max-width: 424px;
     height: 154px;
     flex-shrink: 0;
     border-radius: 10px;
     background-color: #1D1A1A !important;
     backdrop-filter: blur(16px);
     border: 1px solid rgb(57, 57, 57);
+    margin-bottom: 24px;
 }
 
 .roadmap {
@@ -596,8 +596,8 @@ th {
 .cont {
     padding: 10px 40px;
     position: relative;
-    background-color: inherit;
     width: 50%;
+    background-color: inherit;
     display: flex;
     justify-content: end;
 }
@@ -845,7 +845,7 @@ th {
     right: 0;
 }
 
-@media (max-width:992px) {
+@media (max-width:1120px) {
     label[for="menubar"] {
         display: flex;
         width: 30px;
@@ -909,6 +909,10 @@ th {
         width: 50%;
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    .pt-md-24 {
+        padding-top: 24px;
     }
 
 }
@@ -979,7 +983,7 @@ th {
         font-style: normal;
         font-weight: 600;
         line-height: normal;
-        text-align: left;
+        text-align: left !important;
         padding-left: 12px;
     }
 
@@ -1056,5 +1060,34 @@ th {
         text-align: start !important;
         padding-left: 12px;
     }
+
+}
+
+@media (max-width:576px) {
+    .main {
+        font-size: 52px !important;
+    }
+
+    .transform_translate {
+        transform: translateY(-3%);
+    }
+
+    .left {
+        left: 69px !important;
+    }
+
+    .left::after,
+    .right::after {
+        left: -54px;
+    }
+
+
+    .timeline::after {
+        height: 80%;
+    }
+    .hh3{
+        font-size: 16px;
+    }
+
 
 }
